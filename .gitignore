@@ -1,0 +1,30 @@
+# Local testing files - do not push to GitHub Pages
+test-server.py
+start-test-server.bat
+start-test-server.ps1
+LOCAL-TESTING.md
+
+# Common development files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (if you add any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python cache (from test server)
+__pycache__/
+*.pyc
+*.pyo
