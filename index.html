@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/uikit.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .uk-card-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .project-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.js"></script>
 
@@ -101,20 +117,39 @@
 
 <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
     <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Project Name</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="">
-            <span uk-icon="icon: link">
-            </span> Website Link </a>
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-card-hover project-card">
+        <h4>Project Name 1</h4>
+        <p>A comprehensive web application showcasing modern frontend development techniques and responsive design principles.</p>
+        <div class="uk-grid-small uk-child-width-auto" uk-grid>
+            <div>
+                <a class="uk-button uk-button-primary uk-button-small" href="project1.html">
+                    <span uk-icon="icon: info"></span> View Details
+                </a>
+            </div>
+            <div>
+                <a class="uk-button-text uk-text-decoration-none" href="" target="_blank">
+                    <span uk-icon="icon: link"></span> Live Demo
+                </a>
+            </div>
         </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>Project Name</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="uk-button-text uk-text-decoration-none" href="">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div></div>
+    </div>
+    <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-card-hover project-card">
+        <h4>Project Name 2</h4>
+        <p>Full-stack web application with real-time features, user authentication, and modern database integration.</p>
+        <div class="uk-grid-small uk-child-width-auto" uk-grid>
+            <div>
+                <a class="uk-button uk-button-primary uk-button-small" href="project2.html">
+                    <span uk-icon="icon: info"></span> View Details
+                </a>
+            </div>
+            <div>
+                <a class="uk-button-text uk-text-decoration-none" href="" target="_blank">
+                    <span uk-icon="icon: link"></span> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
