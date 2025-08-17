@@ -21,6 +21,44 @@
         .project-card:hover {
             transform: scale(1.02);
         }
+        
+        .clickable-card {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .clickable-card:hover {
+            border-color: #1e87f0;
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(30, 135, 240, 0.2);
+        }
+        
+        .uk-link-reset {
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+        
+        .uk-link-reset:hover {
+            text-decoration: none !important;
+            color: inherit !important;
+        }
+        
+        .clickable-card h4 {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+        
+        .clickable-card:hover h4 {
+            color: #1e87f0;
+        }
+        
+        .clickable-card .uk-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .clickable-card:hover .uk-icon {
+            transform: translateX(5px);
+        }
     </style>
     <script src="js/uikit.js"></script>
     <script src="js/uikit-icons.js"></script>
@@ -32,7 +70,7 @@
     <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     
     <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
+        <a href="" class="uk-navbar-item uk-logo uk-light">Om Mahajan.</a>
     </div>
     <div class="uk-navbar-right">
 
@@ -51,7 +89,7 @@
 <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
     
     <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
+        <a href="" class="uk-navbar-item uk-logo uk-light">Om Mahajan.</a>
     </div>
     <div class="uk-navbar-right">
 
@@ -83,8 +121,8 @@
 <!-- Navigation Bar Mobile Ends -->
 <!-- Home -->
 <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm John Doe, a front-end web developer, <br>graphic designer, and an UI/UX designer.</h1>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Om Mahajan, a Student at the Indian Institute of Technology, Madras, <br>Studying Mechanical Engineering, with a keen interst in Robotics.</h1>
+   <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
 
 
 </section>
@@ -117,38 +155,24 @@
 
 <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
     <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-card-hover project-card">
-        <h4>Project Name 1</h4>
-        <p>A comprehensive web application showcasing modern frontend development techniques and responsive design principles.</p>
-        <div class="uk-grid-small uk-child-width-auto" uk-grid>
-            <div>
-                <a class="uk-button uk-button-primary uk-button-small" href="project1.html">
-                    <span uk-icon="icon: info"></span> View Details
-                </a>
-            </div>
-            <div>
-                <a class="uk-button-text uk-text-decoration-none" href="" target="_blank">
-                    <span uk-icon="icon: link"></span> Live Demo
-                </a>
+    <a href="project1.html" class="uk-link-reset">
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-card-hover project-card clickable-card">
+            <h4>Project Name 1 <span uk-icon="icon: chevron-right" class="uk-float-right"></span></h4>
+            <p>A comprehensive web application showcasing modern frontend development techniques and responsive design principles.</p>
+            <div class="uk-text-meta uk-margin-small-top">
+                <span uk-icon="icon: info"></span> Click to view details
             </div>
         </div>
-    </div>
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-card-hover project-card">
-        <h4>Project Name 2</h4>
-        <p>Full-stack web application with real-time features, user authentication, and modern database integration.</p>
-        <div class="uk-grid-small uk-child-width-auto" uk-grid>
-            <div>
-                <a class="uk-button uk-button-primary uk-button-small" href="project2.html">
-                    <span uk-icon="icon: info"></span> View Details
-                </a>
-            </div>
-            <div>
-                <a class="uk-button-text uk-text-decoration-none" href="" target="_blank">
-                    <span uk-icon="icon: link"></span> Live Demo
-                </a>
+    </a>
+    <a href="project2.html" class="uk-link-reset">
+        <div class="uk-margin uk-card uk-card-secondary uk-card-body uk-card-hover project-card clickable-card">
+            <h4>Project Name 2 <span uk-icon="icon: chevron-right" class="uk-float-right"></span></h4>
+            <p>Full-stack web application with real-time features, user authentication, and modern database integration.</p>
+            <div class="uk-text-meta uk-margin-small-top">
+                <span uk-icon="icon: info"></span> Click to view details
             </div>
         </div>
-    </div>
+    </a>
 </div>
 
 
